@@ -1,12 +1,16 @@
+// NOT TO BE COMPILED AND RAN. ONLY TO HELP WITH UNDERSTANDING THE LEETCODE PROBLEMS
+
 #include <iostream>
 #include "Objects/box.h"
-
+#include <string>
 using namespace std;
 
 // Leetcode Problem -Easy- Reverse Integer
-class ReverseIntegerSolution001 {
+class ReverseIntegerSolution001 
+{
 public:
-    int reverse(int x) {
+    int reverse(int x) 
+    {
         int rev = 0;
         while (x != 0) {
             int pop = x % 10;
@@ -20,10 +24,12 @@ public:
 };
 
 
-//Leetcode Problem -Easy- Two Sums -Bruteforce Example
-class TwoSumsSolution001{
+// Leetcode Problem -Easy- Two Sums -Bruteforce Example
+class TwoSumsSolution001
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int>& nums, int target) 
+    {
         vector<int> ret;
         int size = nums.size();
         for(int i = 0; i < size - 1; i++) 
@@ -43,10 +49,12 @@ public:
 };
 
 
-//Leetcode Problem -Easy- Two Sums -Maps Example
-class TwoSumsSolution002 {
+// Leetcode Problem -Easy- Two Sums -Maps Example
+class TwoSumsSolution002 
+{
 public:
-     vector<int> twoSum(vector<int>& nums, int target) {
+     vector<int> twoSum(vector<int>& nums, int target) 
+     {
         vector<int> ret;
         int size = nums.size();
         int diff;
@@ -67,7 +75,17 @@ public:
 };
 
     
-    
+// Leetcode Problem -Easy- Remove Duplicates From Sorted Array
+class RemoveDuplicatesSolution001 
+{
+public:
+    int removeDuplicates(vector<int>& nums) 
+    {
+        if(nums.size() == 0) return 0;
+        
+        int index = 1;
+    }
+};
     
     
     
